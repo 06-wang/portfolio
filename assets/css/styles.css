@@ -1066,13 +1066,75 @@ textarea.form-input {
 
 @media (max-width: 768px) {
 
+    body { height: 100dvh; }
+
     .activity-bar { display: none; }
     .explorer     { display: none; }
-    .tabs         { display: none; }
     .editor-pane  { display: none; }
-    .status-bar {display: none;}
 
-    .preview-pane { width: 100%; }
+    /* Tabs stay as the page navigation, scrollable sideways */
+    .tab { padding: 0 12px; }
+
+    /* Status bar keeps only the EN | ES switch */
+    .status-bar-left,
+    .status-bar-right > span:not(:last-child) { display: none; }
+    .status-bar { justify-content: flex-end; height: 32px; font-size: 13px; }
+
+    .preview-pane {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    /* About - hero stacked in one column */
+    .hero-section {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 28px 20px 24px;
+        gap: 28px;
+    }
+
+    .hero-content { max-width: none; }
+
+    .preview-pane h1.hero-name { font-size: 44px; }
+
+    .hero-description { font-size: 14px !important; }
+
+    .hero-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 24px;
+    }
+
+    .avatar-wrap,
+    .avatar-inner { width: 110px; height: 110px; }
+    .avatar-inner { font-size: 60px; }
+
+    .hero-stats { width: 180px; }
+
+    .status-dot { width: 100%; justify-content: center; }
+
+    .hero-buttons a { flex: 1; }
+    .hero-btn,
+    .hero-btn-ghost { width: 100%; padding: 12px 22px; }
+
+    .skills-section { padding: 20px 20px 28px; overflow-y: visible; }
+    .chips { padding-left: 0; }
+    .module-name { line-height: 1.4; }
+
+    /* Projects - one card per row */
+    .lab-preview { padding: 24px 20px; height: auto; }
+    .lab-grid { grid-template-columns: 1fr; }
+
+    /* Contact - full-width form */
+    .preview-pane:has(.contact-form-wrap) {
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        padding: 20px 16px;
+    }
+    .contact-form-wrap { width: 100%; padding: 22px 18px; }
+    .form-row { grid-template-columns: 1fr; }
+    .form-input { font-size: 16px; } /* avoids iOS zoom on focus */
 
     /* Language switch — floating button */
     .lang-switch {
