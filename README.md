@@ -1,6 +1,6 @@
 # Portfolio
 
-Sitio web personal de Zhiyou Wang (Siyu).
+Sitio web personal de Zhiyou Wang.
 
 Dominio: [www.wangzhiyou.com](https://www.wangzhiyou.com)
 
