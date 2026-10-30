@@ -1,0 +1,287 @@
+:root {
+    --background: #111111;
+    --card: #1b1b1b;
+    --border: #303030;
+    --text: #f5f5f5;
+    --muted: #929292;
+    --accent: #4daafc;
+    --accent-dark: #0078d4;
+    --success: #89d185;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(0, 120, 212, 0.12), transparent 30rem),
+        radial-gradient(circle at 90% 85%, rgba(77, 170, 252, 0.07), transparent 24rem),
+        var(--background);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-card {
+    width: min(100%, 760px);
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(27, 27, 27, 0.94);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.top-line {
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-dark), var(--accent), transparent);
+}
+
+.site-header,
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 32px;
+}
+
+.site-header {
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand-mark {
+    color: var(--accent);
+    font-size: 17px;
+}
+
+.status-pill {
+    color: var(--success);
+    border: 1px solid rgba(137, 209, 133, 0.25);
+    border-radius: 999px;
+    padding: 6px 11px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 9px var(--success);
+}
+
+.content {
+    flex: 1;
+    width: min(100%, 560px);
+    padding: 86px 32px 70px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(42px, 8vw, 70px);
+    letter-spacing: -2px;
+    line-height: 1.02;
+    margin: 0;
+}
+
+h1 span {
+    color: var(--accent);
+}
+
+.intro {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 26px 0 38px;
+    max-width: 500px;
+}
+
+.progress-block {
+    margin-bottom: 36px;
+}
+
+.progress-label {
+    color: var(--muted);
+    display: flex;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 11px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.progress-label strong {
+    color: var(--text);
+    font-weight: 400;
+}
+
+.progress-track {
+    background: #2b2b2b;
+    border-radius: 999px;
+    height: 6px;
+    overflow: hidden;
+}
+
+.progress-track span {
+    display: block;
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+    border-radius: inherit;
+    animation: grow 1.2s ease-out both;
+}
+
+@keyframes grow {
+    from { width: 0; }
+    to { width: 65%; }
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 18px;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background: var(--accent-dark);
+    color: #ffffff;
+}
+
+.button-primary:hover {
+    background: #026ec1;
+}
+
+.button-secondary {
+    border: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.button-secondary:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.site-footer {
+    border-top: 1px solid var(--border);
+    color: #666666;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10px;
+}
+
+.site-footer strong {
+    color: var(--success);
+    font-weight: 400;
+}
+
+.footer-separator {
+    color: var(--border);
+}
+
+.background-code {
+    bottom: 7%;
+    color: rgba(77, 170, 252, 0.09);
+    display: flex;
+    flex-direction: column;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: clamp(20px, 4vw, 42px);
+    gap: 4px;
+    position: absolute;
+    right: -10px;
+    transform: rotate(-8deg);
+    user-select: none;
+}
+
+@media (max-width: 560px) {
+    .page-shell {
+        padding: 12px;
+    }
+
+    .progress-card {
+        min-height: calc(100vh - 24px);
+    }
+
+    .site-header,
+    .site-footer {
+        padding: 18px 20px;
+    }
+
+    .content {
+        padding: 64px 20px 50px;
+    }
+
+    .site-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-track span {
+        animation: none;
+    }
+
+    .button {
+        transition: none;
+    }
+}

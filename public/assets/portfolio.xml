@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+
+  <autor>
+    <nombre>Zhiyou Wang</nombre>
+    <rol>Estudiante de ASIR</rol>
+    <centro>DigitechFP</centro>
+    <curso>2025/2027</curso>
+    <ubicacion>España</ubicacion>
+    <idiomas>
+      <idioma nivel="nativo">Español</idioma>
+      <idioma nivel="nativo">中文 (Chino)</idioma>
+      <idioma nivel="intermedio">English</idioma>
+    </idiomas>
+    <contacto>
+      <github>https://github.com/06-wang</github>
+      <linkedin>https://www.linkedin.com/in/zhiyouwang</linkedin>
+      <disponibilidadPracticas>No disponible</disponibilidadPracticas>
+      <tiempoRespuesta>Menos de 24 horas</tiempoRespuesta>
+    </contacto>
+  </autor>
+
+  <descripcion>
+    Estudiante de ASIR en España, apasionado por Linux, redes y automatización.
+    Con experiencia en administración de sistemas, Docker y scripting.
+  </descripcion>
+
+  <estadisticas>
+    <stat nombre="Habilidades">10+</stat>
+    <stat nombre="Idiomas">3</stat>
+    <stat nombre="Curso">ASIR 1º (2025/2026)</stat>
+  </estadisticas>
+
+  <habilidades>
+
+    <modulo nombre="Fundamentos de Programación">
+      <tecnologia>Python</tecnologia>
+      <tecnologia>Nginx</tecnologia>
+      <tecnologia>Flask</tecnologia>
+      <tecnologia>FastAPI</tecnologia>
+    </modulo>
+
+    <modulo nombre="Bases de Datos">
+      <tecnologia>MySQL</tecnologia>
+      <tecnologia>Docker</tecnologia>
+      <tecnologia>MySQL Workbench</tecnologia>
+    </modulo>
+
+    <modulo nombre="Lenguajes de Marcas">
+      <tecnologia>HTML</tecnologia>
+      <tecnologia>CSS</tecnologia>
+      <tecnologia>JavaScript</tecnologia>
+      <tecnologia>XML</tecnologia>
+      <tecnologia>PHP</tecnologia>
+    </modulo>
+
+    <modulo nombre="Planificación y Administración de Redes">
+      <tecnologia>Packet Tracer</tecnologia>
+      <tecnologia>TCP/IP</tecnologia>
+      <tecnologia>OSPF</tecnologia>
+      <tecnologia>RIP</tecnologia>
+      <tecnologia>VLANs</tecnologia>
+      <tecnologia>NAT</tecnologia>
+      <tecnologia>DHCP</tecnologia>
+    </modulo>
+
+    <modulo nombre="Implantación de Sistemas Operativos">
+      <tecnologia>Linux</tecnologia>
+      <tecnologia>Bash Scripts</tecnologia>
+      <tecnologia>Gestión de Usuarios Linux</tecnologia>
+      <tecnologia>Windows Server</tecnologia>
+      <tecnologia>Active Directory</tecnologia>
+    </modulo>
+
+    <modulo nombre="Herramientas Generales">
+      <tecnologia>VirtualBox</tecnologia>
+      <tecnologia>Git</tecnologia>
+      <tecnologia>Docker</tecnologia>
+    </modulo>
+
+  </habilidades>
+
+  <proyectos>
+
+    <proyecto id="1">
+      <titulo>VSCode Portfolio</titulo>
+      <categoria>Lenguaje de Marcas</categoria>
+      <tecnologias>
+        <tecnologia>HTML</tecnologia>
+        <tecnologia>CSS</tecnologia>
+        <tecnologia>JavaScript</tecnologia>
+      </tecnologias>
+      <descripcion>
+        Portfolio personal con estética de VSCode. Diseñado íntegramente con HTML,
+        CSS y JS puro, sin frameworks.
+      </descripcion>
+      <repositorio>https://github.com/06-wang/portfolio</repositorio>
+    </proyecto>
+
+    <proyecto id="2">
+      <titulo>Aplicación Python + MySQL</titulo>
+      <categoria>Programación · Bases de Datos</categoria>
+      <tecnologias>
+        <tecnologia>Python</tecnologia>
+        <tecnologia>MySQL</tecnologia>
+        <tecnologia>Docker</tecnologia>
+        <tecnologia>Nginx</tecnologia>
+        <tecnologia>Flask</tecnologia>
+        <tecnologia>FastAPI</tecnologia>
+      </tecnologias>
+      <descripcion>
+        Aplicación Python conectada a MySQL. CRUD completo con gestión de usuarios,
+        consultas y esquema de base de datos.
+      </descripcion>
+      <repositorio>https://github.com/06-wang/reserva-hoteles-flask-mysql</repositorio>
+    </proyecto>
+
+  </proyectos>
+
+  <sitioWeb>
+    <idiomas>
+      <idioma codigo="es">Español</idioma>
+      <idioma codigo="en">English</idioma>
+    </idiomas>
+    <paginas>
+      <pagina ruta="about.html">Sobre mí</pagina>
+      <pagina ruta="project.html">Proyectos / Lab</pagina>
+      <pagina ruta="contact.html">Contacto</pagina>
+      <pagina ruta="resume.html">Currículum</pagina>
+      <pagina ruta="404.html">Página no encontrada</pagina>
+    </paginas>
+    <estetica>VS Code Dark Theme</estetica>
+    <tecnologias>
+      <tecnologia>HTML</tecnologia>
+      <tecnologia>CSS</tecnologia>
+      <tecnologia>JavaScript</tecnologia>
+    </tecnologias>
+  </sitioWeb>
+
+</portfolio>

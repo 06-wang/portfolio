@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - VS Code Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script>try{if(sessionStorage.getItem('splashSeen'))document.documentElement.classList.add('splash-seen')}catch(e){}</script>
+</head>
+<body>
+    <div class="splash" id="splash" role="status" aria-label="Loading">
+        <div class="splash-content">
+            <div class="splash-logo">&lt;/&gt;</div>
+            <div class="splash-name">Zhiyou Wang</div>
+            <div class="splash-status">Opening portfolio...</div>
+            <div class="splash-bar"><span></span></div>
+        </div>
+    </div>
+
+    <div class="vscode-app">
+        <div class="activity-bar">
+            <div class="activity-bar-top">
+                <div class="icon-container active">
+                    <img src="../assets/icons/copy.svg" class="icon active" alt="copy icon">
+                </div>
+                <div class="icon-container">
+                    <img src="../assets/icons/search.svg" class="icon" alt="search icon">
+                </div>
+            </div>
+        </div>
+
+        <div class="explorer">
+            <div class="explorer-header">Explorer</div>
+            <div class="explorer-section">
+                <img src="../assets/icons/arrow-down.svg" class="explorer-arrow" alt="arrow icon">
+                <h3>Portfolio</h3>
+            </div>
+            <ul class="file-list" style="padding-left: 10px;">
+                <li class="folder-item" style="display: flex; align-items: center; padding: 3px 0; color: var(--fg); font-weight: bold;">
+                    <img src="../assets/icons/arrow-down.svg" class="explorer-arrow" alt="arrow icon">
+                    <img src="../assets/icons/folder.svg" class="explorer-folder" alt="folder icon">
+                    en
+                </li>
+                <ul class="file-list-sub" style="list-style: none; padding-left: 15px; margin-bottom: 5px;">
+                    <li class="file-item">
+                        <a href="about.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> about.json
+                        </a>
+                    </li>
+                    <li class="file-item active">
+                        <a href="project.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> proyect.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="contact.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> contact.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="resume.html">
+                            <img src="../assets/icons/pdf.svg" class="file-icon" width="16" height="16" alt="pdf icon"> resume.pdf
+                        </a>
+                    </li>
+                </ul>
+                <li class="folder-item-collapsed">
+                    <div class="folder-label">
+                        <img src="../assets/icons/arrow-right.svg" class="explorer-arrow" alt="arrow icon">
+                        <img src="../assets/icons/folder.svg" class="explorer-folder" alt="folder icon">
+                        es
+                    </div>
+                    <ul class="folder-dropdown">
+                        <li class="file-item">
+                            <a href="../es/about.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> about.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/project.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> proyect.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/contact.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> contact.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/resume.html">
+                                <img src="../assets/icons/pdf.svg" class="file-icon" width="16" height="16" alt="pdf icon"> resume.pdf
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="tabs">
+                <div class="tab"><a href="about.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> about.json</a></div>
+                <div class="tab active"><a href="project.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> proyect.json</a></div>
+                <div class="tab"><a href="contact.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> contact.json</a></div>
+                <div class="tab"><a href="resume.html"><img src="../assets/icons/pdf.svg" class="file-icon icon-pdf" width="16" height="16" alt="pdf icon" style="margin-right: 5px;"> resume.pdf</a></div>
+            </div>
+
+            <div class="panes">
+                <div class="editor-pane">
+                    <div><span class="line-number">1</span><span class="t">{</span></div>
+                    <div><span class="line-number">2</span>&nbsp;&nbsp;<span class="key">"lab"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"description"</span>: <span class="string">"Practical projects from my ASIR studies"</span>,</div>
+                    <div><span class="line-number">4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"total_projects"</span>: <span class="number">2</span>,</div>
+                    <div><span class="line-number">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"updated"</span>: <span class="string">"2025"</span></div>
+                    <div><span class="line-number">6</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">7</span>&nbsp;</div>
+                    <div><span class="line-number">8</span>&nbsp;&nbsp;<span class="key">"subjects"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"markup_languages"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"projects"</span>: <span class="number">1</span>,</div>
+                    <div><span class="line-number">11</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"stack"</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>]</div>
+                    <div><span class="line-number">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"programming"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">14</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"projects"</span>: <span class="number">1</span>,</div>
+                    <div><span class="line-number">15</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"stack"</span>: [<span class="string">"Python"</span>, <span class="string">"MySQL"</span>, <span class="string">"Docker"</span>]</div>
+                    <div><span class="line-number">16</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t">}</span></div>
+                    <div><span class="line-number">17</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">18</span>&nbsp;</div>
+                    <div><span class="line-number">19</span>&nbsp;&nbsp;<span class="key">"repository"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">20</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"url"</span>: <span class="string">"github.com/06-wang"</span>,</div>
+                    <div><span class="line-number">21</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"format"</span>: <span class="string">".py / .yml"</span></div>
+                    <div><span class="line-number">22</span>&nbsp;&nbsp;<span class="t">}</span></div>
+                    <div><span class="line-number">23</span><span class="t">}</span></div>
+                </div>
+
+                <div class="preview-pane">
+                    <div class="lab-preview">
+                        <div class="lab-header">
+                            <h1 class="lab-title">My <span>Lab</span></h1>
+                            <p class="lab-subtitle">Hands-on projects from my ASIR modules · on GitHub.</p>
+                        </div>
+
+                        <div class="lab-grid">
+                            <div class="lab-card">
+                                <div class="card-banner portfolio">
+                                    <img src="../assets/images/web-proyect.png" class="banner-img" alt="VSCode Portfolio">
+                                    <span class="card-badge badge-web">Web</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-meta">
+                                        <span class="card-lang-dot" style="background:var(--tok-function);"></span>
+                                        <span class="card-lang">Lenguaje de Marcas</span>
+                                    </div>
+                                    <div class="card-title">VSCode Portfolio</div>
+                                    <p class="card-desc">Portfolio personal con estética de VSCode. Diseñado íntegramente con HTML, CSS y JS puro, sin frameworks.</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag tag-orange">HTML</span>
+                                        <span class="card-tag tag-purple">CSS</span>
+                                        <span class="card-tag tag-yellow">JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://github.com/06-wang/portfolio" class="btn-lab btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                </div>
+                            </div>
+
+
+                            <div class="lab-card">
+                                <div class="card-banner python">
+                                    <img src="../assets/images/python-proyect.png" class="banner-img" alt="Python Database App">
+                                    <span class="card-badge badge-python">Python</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-meta">
+                                        <span class="card-lang-dot" style="background:var(--tok-control);"></span>
+                                        <span class="card-lang">Programación · Bases de Datos</span>
+                                    </div>
+                                    <div class="card-title">Python + Bases de Datos</div>
+                                    <p class="card-desc">Aplicación Python conectada a MySQL. CRUD completo con gestión de usuarios, consultas y esquema de base de datos.</p>
+                                    <div class="card-tags">
+                                        <span class="card-tag tag-yellow">Python</span>
+                                        <span class="card-tag tag-green">MySQL</span>
+                                        <span class="card-tag tag-green">Docker</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://github.com/06-wang/reserva-hoteles-flask-mysql" class="btn-lab btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div class="status-bar-left">
+            <span>&#9022; main</span>
+            <span>&times; 6</span>
+            <span>&#9888; 7</span>
+            <span id="time"></span>
+            
+        </div>
+        <div class="status-bar-right">
+        <div class="status-bar-right">
+            <span>LN 1, COL 1</span>
+            <span>PROJECT</span>
+            <span>Powered by ME</span>
+            <span>Port:MICASA</span>
+            <span style="font-weight: bold; margin-left: 5px;">EN | <a href="../es/project.html" style="text-decoration: none;">ES</a></span>
+        </div>
+    </div>
+</body>
+</html>

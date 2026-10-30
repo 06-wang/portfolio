@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhiyou Wang</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script>try{if(sessionStorage.getItem('splashSeen'))document.documentElement.classList.add('splash-seen')}catch(e){}</script>
+</head>
+<body>
+    <div class="splash" id="splash" role="status" aria-label="Loading">
+        <div class="splash-content">
+            <div class="splash-logo">&lt;/&gt;</div>
+            <div class="splash-name">Zhiyou Wang</div>
+            <div class="splash-status">Opening portfolio...</div>
+            <div class="splash-bar"><span></span></div>
+        </div>
+    </div>
+
+    <div class="vscode-app">
+        <div class="activity-bar">
+            <div class="activity-bar-top">
+                <div class="icon-container active">
+                    <img src="../assets/icons/copy.svg" class="icon active" alt="copy icon">
+                </div>
+                <div class="icon-container">
+                    <img src="../assets/icons/search.svg" class="icon" alt="search icon">
+                </div> 
+            </div>
+        </div>
+
+        <div class="explorer">
+            <div class="explorer-header">Explorer</div>
+            <div class="explorer-section">
+                <img src="../assets/icons/arrow-down.svg" class="explorer-arrow" alt="arrow icon">
+                <h3>Portfolio</h3>
+            </div>
+            <ul class="file-list" style="padding-left: 10px;">
+                <li class="folder-item" style="display: flex; align-items: center; padding: 3px 0; color: var(--fg); font-weight: bold;">
+                    <img src="../assets/icons/arrow-down.svg" class="explorer-arrow" alt="arrow icon">
+                    <img src="../assets/icons/folder.svg" class="explorer-folder" alt="folder icon">
+                    en
+                </li>
+                <ul class="file-list-sub" style="list-style: none; padding-left: 15px; margin-bottom: 5px;">
+                    <li class="file-item active">
+                        <a href="about.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> about.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="project.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> proyect.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="contact.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> contact.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="resume.html">
+                            <img src="../assets/icons/pdf.svg" class="file-icon" width="16" height="16" alt="pdf icon"> resume.pdf
+                        </a>
+                    </li>
+                </ul>
+                <li class="folder-item-collapsed">
+                    <div class="folder-label">
+                        <img src="../assets/icons/arrow-right.svg" class="explorer-arrow" alt="arrow icon">
+                        <img src="../assets/icons/folder.svg" class="explorer-folder" alt="folder icon">
+                        es
+                    </div>
+                    <ul class="folder-dropdown">
+                        <li class="file-item">
+                            <a href="../es/about.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> about.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/project.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> proyect.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/contact.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> contact.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/resume.html">
+                                <img src="../assets/icons/pdf.svg" class="file-icon" width="16" height="16" alt="pdf icon"> resume.pdf
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="tabs">
+                <div class="tab active"><a href="about.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> about.json</a></div>
+                <div class="tab"><a href="project.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> proyect.json</a></div>
+                <div class="tab"><a href="contact.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> contact.json</a></div>
+                <div class="tab"><a href="resume.html"><img src="../assets/icons/pdf.svg" class="file-icon icon-pdf" width="16" height="16" alt="pdf icon" style="margin-right: 5px;"> resume.pdf</a></div>
+            </div>
+
+            <div class="panes">
+                <div class="editor-pane">
+                    <div><span class="line-number">1</span><span class="t">{</span></div>
+                    <div><span class="line-number">2</span>&nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Zhiyou"</span>,</div>
+                    <div><span class="line-number">3</span>&nbsp;&nbsp;<span class="key">"surname"</span>: <span class="string">"Wang"</span>,</div>
+                    <div><span class="line-number">4</span>&nbsp;&nbsp;<span class="key">"location"</span>: <span class="string">"Madrid, Spain"</span>,</div>
+                    <div><span class="line-number">5</span>&nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"ASIR Student"</span>,</div>
+                    <div><span class="line-number">6</span>&nbsp;</div>
+                    <div><span class="line-number">7</span>&nbsp;&nbsp;<span class="key">"education"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">8</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"current"</span>: <span class="string">"Network and Computer Systems Administration (ASIR)"</span>,</div>
+                    <div><span class="line-number">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"previous"</span>: <span class="string">"Microcomputer Systems and Networks (SMR)"</span>,</div>
+                    <div><span class="line-number">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"school"</span>: <span class="string">"Digitech FP"</span>,</div>
+                    <div><span class="line-number">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"year"</span>: <span class="string">"2023/2027"</span></div>
+                    <div><span class="line-number">12</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">13</span>&nbsp;</div>
+                    <div><span class="line-number">14</span>&nbsp;&nbsp;<span class="key">"experience"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">15</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"company"</span>: <span class="string">"Konecta"</span>,</div>
+                    <div><span class="line-number">16</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"position"</span>: <span class="string">"Helpdesk Support (internship)"</span>,</div>
+                    <div><span class="line-number">17</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"period"</span>: <span class="string">"Mar 2025 - Jun 2025"</span></div>
+                    <div><span class="line-number">18</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">19</span>&nbsp;</div>
+                    <div><span class="line-number">20</span>&nbsp;&nbsp;<span class="key">"certifications"</span>: [<span class="string">"CCNA: Introduction to Networks"</span>],</div>
+                    <div><span class="line-number">21</span>&nbsp;</div>
+                    <div><span class="line-number">22</span>&nbsp;&nbsp;<span class="key">"skills"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">23</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"os"</span>: [<span class="string">"Windows Server"</span>, <span class="string">"Active Directory"</span>, <span class="string">"GPO"</span>, <span class="string">"Debian"</span>, <span class="string">"Ubuntu"</span>],</div>
+                    <div><span class="line-number">24</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"networking"</span>: [<span class="string">"IPv4/IPv6"</span>, <span class="string">"VLAN"</span>, <span class="string">"Routing"</span>, <span class="string">"DHCP"</span>, <span class="string">"DNS"</span>, <span class="string">"SSH"</span>],</div>
+                    <div><span class="line-number">25</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"databases"</span>: [<span class="string">"SQL"</span>, <span class="string">"MySQL"</span>, <span class="string">"Oracle"</span>],</div>
+                    <div><span class="line-number">26</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"security"</span>: [<span class="string">"Firewall"</span>, <span class="string">"VPN"</span>, <span class="string">"Backups"</span>, <span class="string">"RAID"</span>],</div>
+                    <div><span class="line-number">27</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"tools"</span>: [<span class="string">"Docker"</span>, <span class="string">"Git"</span>, <span class="string">"Bash"</span>, <span class="string">"LaTeX"</span>],</div>
+                    <div><span class="line-number">28</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"programming"</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Python"</span>, <span class="string">"XML"</span>, <span class="string">"JSON"</span>],</div>
+                    <div><span class="line-number">29</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">30</span>&nbsp;</div>
+                    <div><span class="line-number">31</span>&nbsp;&nbsp;<span class="key">"languages"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">32</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"spanish"</span>: <span class="string">"native"</span>,</div>
+                    <div><span class="line-number">33</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"chinese"</span>: <span class="string">"native"</span>,</div>
+                    <div><span class="line-number">34</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"english"</span>: <span class="string">"B2"</span></div>
+                    <div><span class="line-number">35</span>&nbsp;&nbsp;<span class="t">}</span></div>
+                    <div><span class="line-number">36</span><span class="t">}</span></div>
+                </div>
+
+                <div class="preview-pane">
+                    <div class="hero-section">
+                        <div class="hero-content">
+                            <p class="hero-greeting">Hi there, I'm</p>
+                            <h1 class="hero-name">Zhiyou<br>Wang</h1>
+                            <p class="hero-role">Student ASIR</p>
+                            <p class="hero-description">Second-year ASIR student in Madrid, with an SMR background and a helpdesk internship at Konecta. I work with Windows and Linux systems, networks, databases and containers, and I enjoy documenting and automating what I set up.</p>
+                            <div class="hero-buttons">
+                                <a href="contact.html" style="text-decoration: none;"><button class="hero-btn">Contact Me</button></a>
+                                <a href="resume.html" style="text-decoration: none;"><button class="hero-btn-ghost">CV</button></a>
+                            </div>
+                        </div>
+
+                        <div class="hero-right">
+                            <div class="avatar-wrap">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-inner">👦</div>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat-box">
+                                    <span class="stat-num">10+</span>
+                                    <span class="stat-label">Skills</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">3</span>
+                                    <span class="stat-label">Languages</span>
+                                </div>
+                                <div class="stat-box stat-box-full">
+                                    <span class="stat-num stat-num-accent">ASIR 2º</span>
+                                    <span class="stat-label">2026 / 2027</span>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <span class="dot"></span>
+                                Available · Looking for an internship
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <p class="skills-label">ASIR Modules · 2025/2026</p>
+
+                        <div class="module-block m-prog">
+                            <div class="module-header">
+                                <span class="module-dot"></span>
+                                <span class="module-name">Programming Fundamentals</span>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">Python</span>
+                                <span class="chip">Nginx</span>
+                                <span class="chip">Flask</span>
+                                <span class="chip">FastAPI</span>
+                            </div>
+                        </div>
+
+                        <div class="module-block m-db">
+                            <div class="module-header">
+                                <span class="module-dot"></span>
+                                <span class="module-name">Databases</span>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">MySQL</span>
+                                <span class="chip">Docker</span>
+                                <span class="chip">MySQL Workbench</span>
+                            </div>
+                        </div>
+
+                        <div class="module-block m-web">
+                            <div class="module-header">
+                                <span class="module-dot"></span>
+                                <span class="module-name">Markup Languages</span>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">XML</span>
+                                <span class="chip">PHP</span>
+                            </div>
+                        </div>
+
+                        <div class="module-block m-redes">
+                            <div class="module-header">
+                                <span class="module-dot"></span>
+                                <span class="module-name">Networking</span>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">Packet Tracer</span>
+                                <span class="chip">TCP/IP</span>
+                                <span class="chip">OSPF</span>
+                                <span class="chip">RIP</span>
+                                <span class="chip">VLANs</span>
+                                <span class="chip">NAT</span>
+                                <span class="chip">DHCP</span>
+                            </div>
+                        </div>
+
+                        <div class="module-block m-so">
+                            <div class="module-header">
+                                <span class="module-dot"></span>
+                                <span class="module-name">Operating Systems</span>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">Linux</span>
+                                <span class="chip">Bash scripts</span>
+                                <span class="chip">Linux User Management</span>
+                                <span class="chip">Windows Server</span>
+                                <span class="chip">Active Directory</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div class="status-bar-left">
+            <span>&#9022; main</span>
+            <span>&times; 6</span>
+            <span>&#9888; 7</span>
+            <span id="time"></span>
+        </div>
+        <div class="status-bar-right">
+            <span>LN 1, COL 1</span>
+            <span>INDEX</span>
+            <span>Powered by ME</span>
+            <span>Port:MICASA</span>
+            <span style="font-weight: bold; margin-left: 5px;">EN | <a href="../es/about.html" style="text-decoration: none;">ES</a></span>
+        </div>
+    </div>
+
+    <div class="mobile-notice-overlay">
+        <div class="mobile-notice-modal">
+              <h2 class="mobile-notice-title">Optimized for Desktop</h2>
+              <p class="mobile-notice-text">To enjoy the complete developer experience (including the VS Code simulator, file explorer, and code editor), we recommend visiting this site from a desktop computer</p>
+              <button type="submit" class="mobile-notice-btn" id="close-mobile-notice">CONTINUE ON MOBILE</button>
+        </div>
+    </div>
+</body>
+</html>

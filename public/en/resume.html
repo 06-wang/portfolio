@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - VS Code Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script>try{if(sessionStorage.getItem('splashSeen'))document.documentElement.classList.add('splash-seen')}catch(e){}</script>
+</head>
+<body>
+    <div class="splash" id="splash" role="status" aria-label="Loading">
+        <div class="splash-content">
+            <div class="splash-logo">&lt;/&gt;</div>
+            <div class="splash-name">Zhiyou Wang</div>
+            <div class="splash-status">Opening portfolio...</div>
+            <div class="splash-bar"><span></span></div>
+        </div>
+    </div>
+
+    <div class="vscode-app">
+        <div class="activity-bar">
+            <div class="activity-bar-top">
+                <div class="icon-container active">
+                    <img src="../assets/icons/copy.svg" class="icon active" alt="copy icon">
+                </div>
+                <div class="icon-container">
+                    <img src="../assets/icons/search.svg" class="icon" alt="search icon">
+                </div> 
+            </div>
+        </div>
+
+        <div class="explorer">
+            <div class="explorer-header">Explorer</div>
+            <div class="explorer-section">
+                <img src="../assets/icons/arrow-down.svg" class="explorer-arrow" alt="arrow icon">
+                <h3>Portfolio</h3>
+            </div>
+            <ul class="file-list" style="padding-left: 10px;">
+                <li class="folder-item" style="display: flex; align-items: center; padding: 3px 0; color: var(--fg); font-weight: bold;">
+                    <img src="../assets/icons/arrow-down.svg" class="explorer-arrow" alt="arrow icon">
+                    <img src="../assets/icons/folder.svg" class="explorer-folder" alt="folder icon">
+                    en
+                </li>
+                <ul class="file-list-sub" style="list-style: none; padding-left: 15px; margin-bottom: 5px;">
+                    <li class="file-item">
+                        <a href="about.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> about.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="project.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> proyect.json
+                        </a>
+                    </li>
+                    <li class="file-item">
+                        <a href="contact.html">
+                            <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> contact.json
+                        </a>
+                    </li>
+                    <li class="file-item active">
+                        <a href="resume.html">
+                            <img src="../assets/icons/pdf.svg" class="file-icon" width="16" height="16" alt="pdf icon"> resume.pdf
+                        </a>
+                    </li>
+                </ul>
+                <li class="folder-item-collapsed">
+                    <div class="folder-label">
+                        <img src="../assets/icons/arrow-right.svg" class="explorer-arrow" alt="arrow icon">
+                        <img src="../assets/icons/folder.svg" class="explorer-folder" alt="folder icon">
+                        es
+                    </div>
+                    <ul class="folder-dropdown">
+                        <li class="file-item">
+                            <a href="../es/about.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> about.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/project.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> proyect.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/contact.html">
+                                <img src="../assets/icons/json.svg" class="file-icon" width="16" height="16" alt="json icon"> contact.json
+                            </a>
+                        </li>
+                        <li class="file-item">
+                            <a href="../es/resume.html">
+                                <img src="../assets/icons/pdf.svg" class="file-icon" width="16" height="16" alt="pdf icon"> resume.pdf
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="tabs">
+                <div class="tab"><a href="about.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> about.json</a></div>
+                <div class="tab"><a href="project.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> proyect.json</a></div>
+                <div class="tab"><a href="contact.html"><img src="../assets/icons/json.svg" class="file-icon icon-json" width="16" height="16" alt="json icon" style="margin-right: 5px;"> contact.json</a></div>
+                <div class="tab active"><a href="resume.html"><img src="../assets/icons/pdf.svg" class="file-icon icon-pdf" width="16" height="16" alt="pdf icon" style="margin-right: 5px;"> resume.pdf</a></div>
+            </div>
+
+            <div class="panes">
+                <div class="editor-pane">
+                    <div><span class="line-number">1</span><span class="t">{</span></div>
+                    <div><span class="line-number">2</span>&nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Zhiyou Wang"</span>,</div>
+                    <div><span class="line-number">3</span>&nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"ASIR Student"</span>,</div>
+                    <div><span class="line-number">4</span>&nbsp;&nbsp;<span class="key">"download_cv"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"format"</span>: <span class="string">"PDF"</span>,</div>
+                    <div><span class="line-number">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"action"</span>: <a href="../assets/Zhiyou_resume.pdf" download style="color: var(--tok-string); text-decoration: underline; font-weight: bold; cursor: pointer; transition: color 0.2s;"><span class="string">"Download PDF"</span></a></div>
+                    <div><span class="line-number">7</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">8</span>&nbsp;&nbsp;<span class="key">"education"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"degree"</span>: <span class="string">"Higher Technician in Network and Computer Systems Administration"</span>,</div>
+                    <div><span class="line-number">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"school"</span>: <span class="string">"Digitech FP"</span>,</div>
+                    <div><span class="line-number">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"period"</span>: <span class="string">"2025 - 2027"</span>,</div>
+                    <div><span class="line-number">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"previous"</span>: <span class="string">"Technician in Microcomputer Systems and Networks, 2023 - 2025"</span></div>
+                    <div><span class="line-number">13</span>&nbsp;&nbsp;<span class="t">}</span>,</div>
+                    <div><span class="line-number">14</span>&nbsp;&nbsp;<span class="key">"experience"</span>: <span class="t">{</span></div>
+                    <div><span class="line-number">15</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"company"</span>: <span class="string">"Konecta"</span>,</div>
+                    <div><span class="line-number">16</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"position"</span>: <span class="string">"Helpdesk Support (internship)"</span>,</div>
+                    <div><span class="line-number">17</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"period"</span>: <span class="string">"Mar 2025 - Jun 2025"</span></div>
+                    <div><span class="line-number">18</span>&nbsp;&nbsp;<span class="t">}</span></div>
+                    <div><span class="line-number">19</span><span class="t">}</span></div>
+                </div>
+
+                <div class="preview-pane" style="padding: 0; display: flex; flex-direction: column; overflow: hidden; height: 100%;">
+                    <iframe src="../assets/Zhiyou_resume.pdf" width="100%" height="100%" style="border: none; flex: 1;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div class="status-bar-left">
+            <span>&#9022; main</span>
+            <span>&times; 6</span>
+            <span>&#9888; 7</span>
+            <span id="time"></span>
+        </div>
+        <div class="status-bar-right">
+            <span>LN 1, COL 1</span>
+            <span>RESUME</span>
+            <span>Powered by ME</span>
+            <span>Port:MICASA</span>
+            <span style="font-weight: bold; margin-left: 5px;">EN | <a href="../es/resume.html" style="text-decoration: none;">ES</a></span>
+        </div>
+    </div>
+</body>
+</html>
