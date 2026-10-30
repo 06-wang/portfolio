@@ -4,31 +4,46 @@
   <autor>
     <nombre>Zhiyou Wang</nombre>
     <rol>Estudiante de ASIR</rol>
-    <centro>DigitechFP</centro>
+    <centro>Digitech FP</centro>
     <curso>2025/2027</curso>
-    <ubicacion>España</ubicacion>
+    <ubicacion>Madrid, España</ubicacion>
     <idiomas>
       <idioma nivel="nativo">Español</idioma>
       <idioma nivel="nativo">中文 (Chino)</idioma>
-      <idioma nivel="intermedio">English</idioma>
+      <idioma nivel="B2">English</idioma>
     </idiomas>
     <contacto>
+      <correo>zyu.wang@outlook.com</correo>
       <github>https://github.com/06-wang</github>
       <linkedin>https://www.linkedin.com/in/zhiyouwang</linkedin>
-      <disponibilidadPracticas>No disponible</disponibilidadPracticas>
+      <disponibilidadPracticas>Disponible</disponibilidadPracticas>
       <tiempoRespuesta>Menos de 24 horas</tiempoRespuesta>
     </contacto>
   </autor>
 
   <descripcion>
-    Estudiante de ASIR en España, apasionado por Linux, redes y automatización.
-    Con experiencia en administración de sistemas, Docker y scripting.
+    Estudiante de segundo curso de ASIR en Madrid, con formación previa en SMR y
+    prácticas de helpdesk en Konecta. Trabajo con sistemas Windows y Linux, redes,
+    bases de datos y contenedores, y disfruto documentando y automatizando lo que configuro.
   </descripcion>
+
+  <formacion>
+    <estudio estado="en curso">Administración de Sistemas Informáticos en Red (ASIR)</estudio>
+    <estudio estado="finalizado">Sistemas Microinformáticos y Redes (SMR)</estudio>
+  </formacion>
+
+  <experiencia>
+    <puesto empresa="Konecta" periodo="Mar 2025 - Jun 2025">Helpdesk support (prácticas)</puesto>
+  </experiencia>
+
+  <certificaciones>
+    <certificacion>CCNA: Introduction to Networks</certificacion>
+  </certificaciones>
 
   <estadisticas>
     <stat nombre="Habilidades">10+</stat>
     <stat nombre="Idiomas">3</stat>
-    <stat nombre="Curso">ASIR 1º (2025/2026)</stat>
+    <stat nombre="Curso">ASIR 2º (2026/2027)</stat>
   </estadisticas>
 
   <habilidades>
@@ -73,9 +88,11 @@
     </modulo>
 
     <modulo nombre="Herramientas Generales">
-      <tecnologia>VirtualBox</tecnologia>
-      <tecnologia>Git</tecnologia>
       <tecnologia>Docker</tecnologia>
+      <tecnologia>Docker Compose</tecnologia>
+      <tecnologia>Git</tecnologia>
+      <tecnologia>Bash</tecnologia>
+      <tecnologia>LaTeX</tecnologia>
     </modulo>
 
   </habilidades>
@@ -98,15 +115,12 @@
     </proyecto>
 
     <proyecto id="2">
-      <titulo>Aplicación Python + MySQL</titulo>
+      <titulo>Python + Bases de Datos</titulo>
       <categoria>Programación · Bases de Datos</categoria>
       <tecnologias>
         <tecnologia>Python</tecnologia>
         <tecnologia>MySQL</tecnologia>
         <tecnologia>Docker</tecnologia>
-        <tecnologia>Nginx</tecnologia>
-        <tecnologia>Flask</tecnologia>
-        <tecnologia>FastAPI</tecnologia>
       </tecnologias>
       <descripcion>
         Aplicación Python conectada a MySQL. CRUD completo con gestión de usuarios,
@@ -123,11 +137,11 @@
       <idioma codigo="en">English</idioma>
     </idiomas>
     <paginas>
-      <pagina ruta="about.html">Sobre mí</pagina>
-      <pagina ruta="project.html">Proyectos / Lab</pagina>
-      <pagina ruta="contact.html">Contacto</pagina>
-      <pagina ruta="resume.html">Currículum</pagina>
-      <pagina ruta="404.html">Página no encontrada</pagina>
+      <pagina ruta="/{idioma}/about.html">Sobre mí</pagina>
+      <pagina ruta="/{idioma}/project.html">Proyectos / Lab</pagina>
+      <pagina ruta="/{idioma}/contact.html">Contacto</pagina>
+      <pagina ruta="/{idioma}/resume.html">Currículum</pagina>
+      <pagina ruta="/404.html">Página no encontrada</pagina>
     </paginas>
     <estetica>VS Code Dark Theme</estetica>
     <tecnologias>
