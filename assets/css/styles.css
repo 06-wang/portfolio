@@ -373,6 +373,11 @@ body {
     color: var(--fg-active) !important;
 }
 
+.status-bar .copyright {
+    color: var(--fg-muted);
+    white-space: nowrap;
+}
+
 .status-bar-left, .status-bar-right {
     display: flex;
     align-items: center;
@@ -1075,9 +1080,9 @@ textarea.form-input {
     /* Tabs stay as the page navigation, scrollable sideways */
     .tab { padding: 0 12px; }
 
-    /* Status bar keeps only the EN | ES switch */
+    /* Status bar keeps only the copyright and the EN | ES switch */
     .status-bar-left,
-    .status-bar-right > span:not(:last-child) { display: none; }
+    .status-bar-right > span:not(:last-child):not(.copyright) { display: none; }
     .status-bar { justify-content: flex-end; height: 32px; font-size: 13px; }
 
     .preview-pane {
